@@ -1,0 +1,422 @@
+/* Estilos generales */
+
+/* Fuentes de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+/* Íconos de Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
+
+/* Estilos de botones */
+button {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #303f9f;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.receta {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.receta img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.receta h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.receta p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.social a {
+  color: #3f51b5;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.receta h3 {
+  grid-column: 5 / span 2;
+  grid-row: 1;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top-right-radius: 5px;
+}
+
+.receta .descripcion {
+  grid-column: 5 / span 2;
+  grid-row: 2 / span 2;
+  padding: 20px;
+}
+
+.receta .iconos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  grid-column: 1 / span 4;
+  grid-row: 3;
+  background-color: #f8f8f8;
+}
+
+.receta .iconos i {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Estilos para la página contacto */
+
+.formulario {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formulario input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Estilo carrito */
+.carrito{
+  border: 1px solid #666;
+  width: 35%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: auto;
+  position: sticky !important;
+  top: 0;
+  transition: .3s;
+  /* Estilos para ocultar */
+  margin-right: -100%;
+  opacity: 0;
+}
+
+.contenedor .contenedor-items{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap:30px;
+  grid-row-gap: 30px;
+  /* width: 60%; */
+  width: 100%;
+  transition: .3s;
+}
+.contenedor .contenedor-items .item{
+  max-width: 200px;
+  margin: auto;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 20px;
+  transition: .3s;
+}
+.contenedor .contenedor-items .item .img-item{
+  width: 100%;
+}
+.contenedor .contenedor-items .item:hover{
+  box-shadow: 0 0 10px #666;
+  scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contenedor .contenedor-items .item .precio-item{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.contenedor .contenedor-items .item .boton-item{
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: black;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* seccion carrito */
+.carrito{
+  border: 1px solid #666;
+  width: 35%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: auto;
+  position: sticky !important;
+  top: 0;
+  transition: .3s;
+  /* Estilos para ocultar */
+  margin-right: -100%;
+  opacity: 0;
+}
+.carrito .header-carrito{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+.carrito .carrito-item{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  position: relative;
+  border-bottom: 1px solid #666;
+  padding: 20px;
+}
+.carrito .carrito-item img{
+  margin-right: 20px;
+}
+.carrito .carrito-item .carrito-item-titulo{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.carrito .carrito-item .selector-cantidad{
+  display: inline-block;
+  margin-right: 25px;
+}
+.carrito .carrito-item .carrito-item-cantidad{
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+  display: inline-block;
+  width:30px;
+  padding: 5px;
+  text-align: center;
+}
+.carrito .carrito-item .selector-cantidad i{
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.carrito .carrito-item .carrito-item-precio{
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.carrito .carrito-item .btn-eliminar{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #000;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  z-index: 20;
+}
+.carrito .carrito-item .btn-eliminar i{
+  pointer-events: none;
+}
+
+.carrito-total{
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+.carrito-total .fila{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.carrito-total .btn-pagar{
+  display: block;
+  width: 100%;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+}
+.carrito-total .btn-pagar:hover{
+  scale: 1.05;
+}
