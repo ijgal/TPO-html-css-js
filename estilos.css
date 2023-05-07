@@ -8,7 +8,7 @@
 
 /* Estilos de botones */
 button {
-  background-color: #3f51b5;
+  background-color: #a46e51;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -24,12 +24,12 @@ body {
   font-family: "Dancing Script", cursive;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #FFF8DC;
 }
 
 header {
-  background-color: #3f51b5;
-  color: #fff;
+  background-color: #e9e2c7;
+  color: #4f0205;
   padding: 20px;
 }
 
@@ -41,11 +41,12 @@ h1 {
 nav {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
+  margin: 0px 0;
+  margin-top: -20px;
 }
 
 nav a {
-  color: #fff;
+  color: #4f0205;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -60,6 +61,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  background-color: #FFF8DC
 }
 
 .receta {
@@ -122,7 +124,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: #4f0205;
   text-decoration: none;
   font-size: 16px;
 }
@@ -135,7 +137,7 @@ nav a {
 }
 
 .grid-item {
-  background-color: #ffffff;
+  background-color: #FFFAF0;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -150,6 +152,9 @@ nav a {
 .grid-item img {
   max-width: 100%;
   height: auto;
+  max-height: 70%;
+  display: flex;
+  margin: auto
 }
 
 .receta h3 {
@@ -180,6 +185,12 @@ nav a {
 .receta .iconos i {
   font-size: 1.5rem;
   color: #333;
+}
+
+
+.titulo-item {
+   display: flex;
+   justify-content: space-around;
 }
 
 /* Estilos para la página contacto */
