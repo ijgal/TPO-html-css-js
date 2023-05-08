@@ -11,62 +11,64 @@
     <script src="validacion.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Las Mejores Pastas del Condado</h1>
-   
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Sobre Nosotros</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-   
-      <form id="contacto" action="enviar.php" method="post">
-        <div>
-          <label for="nombre">Nombre</label><br />
-          <input type="text" id="nombre" name="nombre" required />
-        </div>
-        <div>
-          <label for="apellido">Apellido</label><br />
-          <input type="text" id="apellido" name="apellido" required />
-        </div>
-        <div>
-          <label for="email">Correo electrónico</label><br />
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label for="motivo">Motivo</label><br />
-          <select id="motivo" name="motivo" required>
-            <option value="">Selecciona un motivo</option>
-            <option value="consulta">Consulta</option>
-            <option value="sugerencia">Sugerencia</option>
-            <option value="problema">Problema técnico</option>
-          </select>
-        </div>
-        <br />
-        <div>
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
-    </main>
+    <div class="wrapper">
+      <header>
+        <h1>Las Mejores Pastas del Condado</h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form id="contacto" action="enviar.php" method="post">
+          <div>
+            <label for="nombre">Nombre</label><br />
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div>
+            <label for="apellido">Apellido</label><br />
+            <input type="text" id="apellido" name="apellido" required />
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label><br />
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="motivo">Motivo</label><br />
+            <select id="motivo" name="motivo" required>
+              <option value="">Selecciona un motivo</option>
+              <option value="consulta">Consulta</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="problema">Problema técnico</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </main>
+    </div>
     <footer>
-      <ul>
+      <p>Síguenos en:</p>
+      <ul class="social-icons">
         <li>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fab fa-instagram"></i
+          <a href="#"
+            ><i class="fab fa-instagram" style="color: #51361f"></i
           ></a>
         </li>
         <li>
-          <a href="https://www.facebook.com/" target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
+          <a href="#"><i class="fab fa-facebook" style="color: #51361f"></i></a>
         </li>
         <li>
-          <a href="mailto:info@recetas.com"><i class="far fa-envelope"></i></a>
+          <a href="mailto:contacto@pastascondado.com"
+            ><i class="fa-solid fa-envelope" style="color: #51361f"></i
+          ></a>
         </li>
       </ul>
     </footer>
