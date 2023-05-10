@@ -333,3 +333,16 @@ html, body {
   height: 4rem;
   background-color: #e2e2e2
 }
+
+/* Display horizontal de Iconos */
+/* .social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+} */
