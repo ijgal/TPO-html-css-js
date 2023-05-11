@@ -18,8 +18,19 @@ body {
 header {
   background-color: #e9e2c7;
   color: #4f0205;
-  padding: 20px;
+  padding: 10px;
 }
+
+header img {
+      /* img es la imagen principal arriba de todo de la pagina*/
+      width: 100%;
+      /*con width ocupa siempre el 100% del ancho de la pantalla y se ajusta solo*/
+      max-height: 300px;
+      /* defino el alto*/
+      object-fit: cover;
+      /*La propiedad CSS object-fit especifica cómo se ajusta una imagen o video dentro de un elemento contenedor. El valor cover indica que la imagen o video debe cubrir completamente el área del elemento contenedor*/
+      
+    }
 
 h1 {
   font-family: "Dancing Script", cursive;
@@ -50,6 +61,18 @@ nav a {
   font-size: 1.2rem;
 }
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+  margin-bottom: -10px;
+}
+
 nav a:hover {
   text-decoration: underline;
 }
@@ -70,17 +93,7 @@ iframe {
 }
 
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
 
-nav li {
-  margin-left: 20px;
-  margin-bottom: -10px;
-}
 
 /* Estilos de botones */
 button {
@@ -317,6 +330,7 @@ button:hover {
 footer {
   background-color: #e9e2c7;
   color: #4f0205;
+  padding: 10px;
 }
 
 
@@ -329,20 +343,41 @@ html, body {
 .wrapper {
   min-height: calc(100% - 4rem);
 }
-.footer {
-  height: 4rem;
-  background-color: #e2e2e2
-}
+
+
 
 /* Display horizontal de Iconos */
 /* .social-icons {
+  font-size: 1rem;
   display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  justify-content: space-around;
+  margin-top: -20px;
 }
 
 .social-icons li {
   margin: 0 10px;
 } */
+
+.social {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social a {
+  color: #4f0205;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.social li {
+  margin-left: 20px;
+  margin-bottom: -10px;
+}
