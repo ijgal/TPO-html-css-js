@@ -363,6 +363,8 @@ body {
 /* @Media para dispositivos pequeños */
 
 /* Mobile  */
+
+
 @media screen and (max-width: 600px) {
   body {
     font-size: 12px;
@@ -385,7 +387,9 @@ body {
   .grid-container {
     grid-gap: 20px;
     margin: 0px;
-  }
+    grid-template-columns: repeat(1, 1fr);
+    }
+
 
   .grid-item {
     padding: 1px;
@@ -403,6 +407,7 @@ body {
   .carrito {
     width: 100%;
   }
+
 }
 
 /* tablet  */
